@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Raspybot Dashboard
 
-## Getting Started
+The Raspybot Dashboard allows you to monitor live telemetry and control the robot remotely. It provides insights into various aspects of the robot's operation, including motor direction, power applied, ultrasonic sensor readings, live webcam stream, active components list, and control over the robot's movement and weapon system.
 
-First, run the development server:
+<p align="center">
+  <img src="/assets/img/dashboard/dashboard.png" alt="dashboard" width="100%" />
+</p>
+
+---
+
+## Features
+
+- **Live Telemetry**: Monitor real-time data from the robot, including motor direction, power applied, and sensor readings.
+<br>
+- **Motor Readings**: View the direction of rotation for the motors and the applied power.
+<br>
+- **Ultrasonic Sensor Readings**: Display the real-time distance readings from the ultrasonic sensors.
+<br>
+- **Webcam Stream**: Stream live video from the robot's webcam to the dashboard for enhanced situational awareness.
+<br>
+- **Active Components List**: View the status and health of various active components of the robot.
+<br>
+- **Weapon Control**: Control the robot’s weapon system remotely, including its activation and movement.
+<br>
+- **Robot Movement Control**: Teleoperate the robot's movement, controlling its direction and speed directly from the dashboard.
+
+---
+
+## Execution
+
+To launch the RaspyBot Dashboard, use the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+./run_dashboard.sh --ip <IP_ADDRESS>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Parameters:
+- **`--ip <IP_ADDRESS>`**: If you specify an IP address, the dashboard will connect directly to the Raspberry Pi using the provided IP.
+  <br>
+- **Without `--ip` parameter**: If no IP address is provided, the dashboard will use `nmap` to search for the Raspberry Pi on the local network automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Example:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To connect to the robot with a specific IP address:
 
-## Learn More
+```bash
+./run_dashboard.sh --ip 192.168.1.100
+```
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+To automatically search for the Raspberry Pi on the local network:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+./run_dashboard.sh
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <img src="/assets/video/demo_dashboard.gif" alt="demo" width="100%" />
+</p>

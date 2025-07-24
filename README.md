@@ -50,7 +50,7 @@ The directory structure of this project is organized as follows:
 ### Demo
 
 <p align="center">
-  <img src="assets/video/demo_lab.gif" alt="Banner" width="100%" />
+  <img src="assets/video/demo_lab.gif" alt="demo" width="100%" />
 </p>
 
 ---
