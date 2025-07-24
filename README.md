@@ -16,12 +16,16 @@ RaspyBot is a robotics project developed using Python and powered by a Raspberry
 
 - Design and assemble the robot hardware, including the selection of components and 3D-printed weapon.  
 <br>
+
 - Implement a system for detecting and tracking balloons.
 <br>
+
 - Develop a telemetry panel and remote control interface for robot management.
 <br>
+
 - Enable balloon identification and tracking while avoiding obstacles.
 <br>
+
 - Improve the system’s performance and precision over time.
 
 ---
