@@ -11,17 +11,29 @@ The Raspybot Dashboard allows you to monitor live telemetry and control the robo
 ## Features
 
 - **Live Telemetry**: Monitor real-time data from the robot, including motor direction, power applied, and sensor readings.
+  
 <br>
+
 - **Motor Readings**: View the direction of rotation for the motors and the applied power.
+  
 <br>
+
 - **Ultrasonic Sensor Readings**: Display the real-time distance readings from the ultrasonic sensors.
+
 <br>
+
 - **Webcam Stream**: Stream live video from the robot's webcam to the dashboard for enhanced situational awareness.
+
 <br>
+
 - **Active Components List**: View the status and health of various active components of the robot.
+
 <br>
+
 - **Weapon Control**: Control the robot’s weapon system remotely, including its activation and movement.
+
 <br>
+
 - **Robot Movement Control**: Teleoperate the robot's movement, controlling its direction and speed directly from the dashboard.
 
 ---
