@@ -48,7 +48,9 @@ To launch the RaspyBot Dashboard, use the following command:
 
 ### Parameters:
 - **`--ip <IP_ADDRESS>`**: If you specify an IP address, the dashboard will connect directly to the Raspberry Pi using the provided IP.
-  <br>
+
+<br>
+
 - **Without `--ip` parameter**: If no IP address is provided, the dashboard will use `nmap` to search for the Raspberry Pi on the local network automatically.
 
 ### Example:
